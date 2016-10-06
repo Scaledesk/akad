@@ -1,14 +1,21 @@
 
+html{
+    overflow-x: hidden;
+}
 
 
 body{
     color: #60606e;
-    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6em;
+    overflow-x: hidden;
 
+}
+
+p{
+    font-size: 16px;
 }
 
 a{
@@ -28,34 +35,36 @@ a:hover{
     text-transform: uppercase;
     display: inline-block;
     font-weight: 800;
+    color: #081833;
 }
 
 
-.title::after{
-    display: inline-block;
-    margin: 20px auto 60px;
-    width: 25%;
-    height: 20px;
-    background-color: #8cdfff ;
-    background-color: rgba(140,223,255,.8);
-    content: '';
-    line-height: 0;
-    -webkit-transition: all 1s ease;
-    transition: all 1s ease;
-    position: absolute;
-    top: -5px;
-    left: 0;
-    z-index: -1;
-}
+/*.title::after{*/
+    /*display: inline-block;*/
+    /*margin: 20px auto 60px;*/
+    /*width: 25%;*/
+    /*height: 20px;*/
+    /*background-color: #00b1b9;*/
+    /*content: '';*/
+    /*line-height: 0;*/
+    /*-webkit-transition: all 1s ease;*/
+    /*transition: all 1s ease;*/
+    /*position: absolute;*/
+    /*top: -5px;*/
+    /*left: 0;*/
+    /*z-index: -1;*/
+/*}*/
 
 
 .subtitle{
-    margin: 20px 0;
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
-    display: inline-block;
+   color: #081833;
+    text-align: left;
+}
+
+.subtitle::first-letter{
     font-weight: 800;
+    font-size: 20px;
+
 }
 
 
@@ -63,7 +72,25 @@ a:hover{
 .custom-nav{
     background-color: transparent!important;
     border: none;
-    padding: 30px 0;
+    padding: 20px 0;
+}
+
+.custom-nav li a{
+    color: #081833!important;
+    transition: all .3s ease-out;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.custom-nav li a:hover{
+    color: #f90f9d!important;
+}
+
+
+
+
+.custom-brand{
+    padding: 0;
 }
 
 
@@ -72,7 +99,7 @@ a:hover{
 /*Colored-button*/
 
 .akad-btn{
-    background-color: #7beec7;
+    background-color: #0a1a33;
     color: #fff;
     border: none;
     width: 200px;
@@ -85,14 +112,14 @@ a:hover{
 }
 
 .akad-btn:hover{
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2);
+    background-color: #f90f9d;
 }
 
 /*white button*/
 
 .akad-btn-white{
     background-color: #fff;
-    color: #7beec7;
+    color: #0a1a33;
     border: none;
     width: 200px;
     height: 50px;
@@ -100,12 +127,30 @@ a:hover{
     font-weight: bolder;
     text-transform: uppercase;
     text-align: center;
-    transition: all .4s ease-in-out;
+    /*transition: all .4s ease-in-out;*/
 }
 
 .akad-btn-white:hover{
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2);
+    background-color: #FEE252;
+    color: #0a1a33;
 }
+
+.akad-btn-small{
+    background-color: #0a1a33;
+    color: #fff;
+    border: none;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    transition: all .4s ease-in-out;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
 
 
 /*//////////////////////////////////////////////////////////////////////////
@@ -117,13 +162,13 @@ a:hover{
 
 
 
-#hero-section{
-    background: url('../img/site-hero.jpg') center no-repeat;
-    width: 100%;
-    height: 840px;
-    background-size: cover;
+/*#hero-section{*/
+    /*background: url('../img/WEB-BANNER.jpg') center no-repeat;*/
+    /*width: 100%;*/
+    /*height: 700px;*/
+    /*background-size: cover;*/
+/*}*/
 
-}
 
 #hero-section .container:nth-child(2){
     padding-top: 100px;
@@ -133,7 +178,6 @@ a:hover{
 #hero-section .main-title{
     width: 50%;
     text-align: center;
-    margin: 0 auto;
 }
 
 
@@ -144,7 +188,7 @@ a:hover{
     margin: 0 auto;
     text-transform: uppercase;
     padding: 10px;
-    background-color: #7beec7;
+    background-color: #00b1b9;
     font-weight: 800;
 }
 
@@ -158,11 +202,44 @@ a:hover{
 
 }
 
+.hero-img{
+    background: url('../img/WEB-BANNER.jpg') center no-repeat;
+    width: 100%;
+    height: 520px;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-txt{
+    margin-top: 13%;
+
+}
+
+.hero-txt h1{
+    font-size: 50px;
+    color: #081833;
+}
+
+.hero-txt span{
+    font-weight: bolder;
+    color: #f90f9d;
+}
+
+.hero-txt p{
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .2px;
+    word-spacing: 4px;
+    color: #081833;
+}
+
 
 
 
 #hero-section .main-title h1{
-    border: 15px solid #565a5c;
+    /*border: 15px solid #565a5c;*/
     padding: 30px;
     font-size: 45px;
     font-weight: 800;
@@ -170,7 +247,23 @@ a:hover{
     margin-top: 0;
 }
 
+/*//////////////////////////////////////////////////////////////////////////
 
+   History section
+
+/////////////////////////////////////////////////////////////////////////*/
+
+
+#history-section{
+    background-color: #FEE252;
+    padding: 60px 0;
+}
+
+.second-title > p >span{
+    font-weight: 800;
+    font-size: 16px;
+
+}
 
 /*//////////////////////////////////////////////////////////////////////////
 
@@ -179,7 +272,7 @@ a:hover{
 /////////////////////////////////////////////////////////////////////////*/
 
 #services .container:first-child{
-    padding-top: 20%;
+    padding: 5% 0;
 }
 
 #services .service-points{
@@ -198,6 +291,41 @@ a:hover{
     font-size: 36px;
 }
 
+#services .container .row .col-xs-12 > p{
+    font-weight: 600;
+    width: 70%;
+    margin: 0 auto;
+    color: #60606e;
+}
+
+
+
+
+
+/*//////////////////////////////////////////////////////////////////////////
+
+   Our section
+
+/////////////////////////////////////////////////////////////////////////*/
+
+
+#our-process{
+    background-color: #FEE252;
+    padding: 70px 0;
+    margin-top: 5%;
+}
+
+#our-process .container .row .col-xs-12 > p{
+    font-weight: 600;
+    width: 70%;
+    margin: 0 auto;
+    color: #60606e;
+}
+
+#our-process .container .row .col-xs-12  p > span{
+    font-weight: 800;
+    font-size: 16px;
+}
 
 
 /*//////////////////////////////////////////////////////////////////////////
@@ -207,13 +335,146 @@ a:hover{
 /////////////////////////////////////////////////////////////////////////*/
 
 #portfolio .container:first-child{
-    padding: 12% 0;
+    padding: 5% 0;
 
 }
 
 #portfolio .container > .row:first-child{
     padding: 0 350px;
 }
+
+.gallery {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}
+.gallery li {
+    width: 250px;
+    min-height: 100%;
+    text-align: center;
+    height: 250px;
+    position: relative;
+    margin: 0 auto;
+    display: inline-block;
+    overflow: hidden;
+    /*background-color: black;*/
+}
+.gallery li:nth-child(2) img {
+    margin: 0;
+    display: inline-block;
+    float: right;
+}
+.gallery li .name {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: rgba(0, 0, 0, 0.7) 1px 1px 5px;
+    color: white;
+    font-weight: lighter;
+    font-size: 20px;
+    letter-spacing: .1em;
+    position: absolute;
+    display: block;
+    top: 70%;
+    left: 0;
+    text-align: center;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+.gallery li .name .title {
+    display: block;
+    text-transform: none;
+    font-style: italic;
+    font-size: 80%;
+    color: rgba(255, 255, 255, 0.7);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+    -moz-transition-duration: 0.9s;
+    -o-transition-duration: 0.9s;
+    -webkit-transition-duration: 0.9s;
+    transition-duration: 0.9s;
+}
+.gallery li:hover .name {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -moz-transition-duration: 0.6s;
+    -o-transition-duration: 0.6s;
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+    background-color: #0a1a33;
+}
+.gallery li:hover .title {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+}
+.gallery li:hover img {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    background-position: top top;
+    /*-webkit-filter: grayscale(0.4) blur(2px);*/
+    /*filter: grayscale(0.4) blur(2px);*/
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    border: 2px solid #FEE252;
+}
+.gallery li:hover:hover img {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.9;
+}
+.gallery li img {
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+    /*-moz-transform: scale(1.09, 1.09);*/
+    /*-ms-transform: scale(1.09, 1.09);*/
+    /*-webkit-transform: scale(1.09, 1.09);*/
+    /*transform: scale(1.09, 1.09);*/
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border: 2px solid #0a1a33;
+}
+
+
+
+
+
+
+
 
 
 /*Isotopes js*/
@@ -359,7 +620,7 @@ a:hover{
     margin: 10px 1%;
     min-width: 250px;
     max-width: 250px;
-    max-height: 300px;
+    max-height: 250px;
     width: 48%;
     height: auto;
     background: #3085a3;
@@ -376,7 +637,7 @@ a:hover{
 }
 
 .grid figure figcaption {
-    padding: 2em;
+    padding: 1.5em;
     color: #fff;
     text-transform: uppercase;
     font-size: 1.25em;
@@ -456,7 +717,7 @@ figure.effect-julia h2 {
 figure.effect-julia p {
     display: inline-block;
     margin: 0 0 0.25em;
-    padding: 0.4em 1em;
+    padding: 0.2em 1em;
     background: rgba(255,255,255,0.9);
     color: #2f3238;
     text-transform: none;
@@ -511,6 +772,9 @@ figure.effect-julia:hover p {
 }
 
 
+
+
+
 /*//////////////////////////////////////////////////////////////////////////
 
    Footer section
@@ -519,7 +783,7 @@ figure.effect-julia:hover p {
 
 
 #footer-section{
-    background-color: #7beec7;
+    background-color: #0a1a33;
     padding: 60px 0;
 }
 
@@ -529,20 +793,33 @@ figure.effect-julia:hover p {
 }
 
 #footer-section .form-container{
-    background-color: #fff;
+    background-color: #FEE252;
     padding: 20px;
+    margin-top: 20px;
 }
+
 
 #footer-section .form-container h3{
     font-weight: 800;
     text-transform: uppercase;
+    color: #0a1a33;
 }
 
+
 #footer-section .form-container .form-group input{
-    padding: 25px;
+    padding: 20px;
+    border: none;
     border-radius: 0;
-    border: 1px solid #eee;
-    box-shadow: none;
+
+}
+
+
+/*#footer-section .footer-nav li a{*/
+    /*color: #223048;*/
+/*}*/
+
+.navbar-default .navbar-nav>li>a{
+    color: #223048;
 
 }
 
@@ -580,7 +857,7 @@ figure.effect-julia:hover p {
 }
 
 .footer-social-icons li a:hover{
-    color: #7beec7;
+    color: #00b1b9;
 }
 
 #copyright p{
@@ -717,6 +994,10 @@ figure.effect-julia:hover p {
     padding-top: 40px!important;
 }
 
+.p-t-60{
+    padding-top: 60px!important;
+}
+
 .p-b-20{
     padding-bottom: 20px!important;
 }
@@ -828,3 +1109,21 @@ figure.effect-julia:hover p {
 }
 
 
+@media screen and (max-width: 768px){
+    .hero-txt h1 {
+        font-size: 40px;
+        color: #081833;
+        text-align: center;
+        margin-top: 40%;
+    }
+
+
+    #portfolio .container > .row:first-child{
+        padding: 10px;
+    }
+
+    #history-section img{
+        width: 100%;
+    }
+
+}
