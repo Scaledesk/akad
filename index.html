@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Scaledesk Web Studio</title>
+    <title>Kreativ Street</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
@@ -10,9 +10,6 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <script src="js/jquery.min.js"></script>
     <link rel="stylesheet" href="css/main.css">
-
-
-
 </head>
 <body>
 
@@ -83,16 +80,10 @@
 
             </div>
 
-            <div class="col-md-6 m-t-40">
+            <div class="col-md-6 m-t-40 ">
                 <div class="second-title">
                     <h2 class="title">HISTORY OF AGENCY</h2>
-                    <p><span>Kreativ Street</span> is a boutique digital marketing agency based out of Gurgaon. Our
-
-                        comprehensive bouquet of services includes social media marketing, website and app
-
-                        development, email marketing, search engine optimization, search engine marketing, and
-
-                        influencer marketing.</p>
+                    <p><span>Kreativ Street</span> is a boutique digital marketing agency based out of Gurgaon. We are a team of highly passionate and young people who were born and brought up in the era when digital grew. We believe, that has given us a superpower of understanding today’s digital environment better than anyone else. With ‘Kreativ’-ity at our core and data on our minds, we help brands stand out on the digital medium.</p>
                 </div>
 
 
@@ -357,7 +348,7 @@
         <div class="row">
             <div class="col-md-6">
                 <h2 class="footer-title">YOU THINK WE'RE COOL? LET'S WORK TOGETHER</h2>
-                <button class="akad-btn-white m-t-20">Get in Touch</button>
+                <button class="akad-btn-white m-t-20" data-toggle="modal" data-target="#exampleModal">Get in Touch</button>
 
             </div>
 
@@ -425,11 +416,65 @@
     </div>
 </section>
 
+<!--bootstrap modal custom-->
+<!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Enquiry</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group form-modal">
+                        <label for="recipient-name" class="control-label">Name</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group form-modal">
+                        <label for="recipient-name" class="control-label">Organisation</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group form-modal">
+                        <label for="recipient-name" class="control-label">Designation</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group form-modal">
+                        <label for="recipient-name" class="control-label">Contact No.</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group form-modal">
+                        <label for="recipient-name" class="control-label">Email</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group form-modal">
+                        <label for="recipient-name" class="control-label">What's on your mind</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="akad-btn" data-dismiss="modal">Close</button>
+                <button type="button" class="akad-btn">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
 
+<script>
 
+    $('#exampleModal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget);// Button that triggered the modal
+        var recipient = button.data('whatever');// Extract info from data-* attributes
+        // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+        // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+        var modal = $(this);
+        modal.find('.modal-title').text('Enquiry Form ' + recipient);
+        modal.find('.modal-body input').val(recipient)
+    })
+</script>
 
-
-
+<!--end bootstrap modal custom -->
 
 
 <script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>

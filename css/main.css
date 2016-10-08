@@ -872,6 +872,19 @@ figure.effect-julia:hover p {
     margin-right: 15px;
     border: none;
 }
+.img-position{
+    position: relative;
+}
+.text-position{
+    position: absolute;
+    margin-left: 488px;
+}
+.modal-content{
+    border-radius: 0;
+}
+.form-modal input{
+    border-radius: 0;
+}
 
 
 /*//////////////////////////////////////////////////////////////////////////
@@ -1127,3 +1140,4 @@ figure.effect-julia:hover p {
     }
 
 }
+
