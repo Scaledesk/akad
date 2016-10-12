@@ -66,7 +66,48 @@ $(document).ready(function(){
         } // End if
     });
 
+    
+
+//Ends here//
+
+    // $(window).scroll(function() {
+    //     if ($(document).scrollTop() > 50) {
+    //         $('nav').addClass('shrink');
+    //     } else {
+    //         $('nav').removeClass('shrink');
+    //     }
+    // });
+
+
+
+    // $(window).scroll(function() {
+    //     var scroll = $(window).scrollTop();
+    //
+    //     if(scroll >= 500) {
+    //         $(".custom-nav").addClass('.shadow');
+    //     } else {
+    //         $(".custom-nav").removeClass('.shadow');
+    //     }
+    // });
+
+    //Header Change color On scroll//
+
+    $(window).scroll(function(event) {
+        var yOffset = window.pageYOffset;
+        var breakpoint = 550;
+        if (yOffset > breakpoint) {
+            $(".custom-nav").addClass('active');
+        } else {
+            $(".custom-nav").removeClass('active');
+        }
+    });
+
+
+//Ends here//
+
 });
+
+
 
 
 //Ends here//

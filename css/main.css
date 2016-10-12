@@ -67,14 +67,13 @@ a:hover{
 
 }
 
-
-
 .custom-nav{
-    background-color: transparent!important;
+    background: rgba(255, 255, 255, 0.67);;
     border: none;
-    padding: 20px 0;
-}
+    padding: 10px 0;
 
+
+}
 .custom-nav li a{
     color: #081833!important;
     transition: all .3s ease-out;
@@ -85,9 +84,10 @@ a:hover{
 .custom-nav li a:hover{
     color: #f90f9d!important;
 }
-
-
-
+.custom-nav.active{
+    background-color: #ffffff!important;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2);
+}
 
 .custom-brand{
     padding: 0;
@@ -203,9 +203,9 @@ a:hover{
 }
 
 .hero-img{
-    background: url('../img/WEB-BANNER.jpg') center no-repeat;
+    background: url('../img/WEB-BANNER2.jpg') center no-repeat;
     width: 100%;
-    height: 520px;
+    height: 625px;
     display: -webkit-flex;
     justify-content: center;
     align-items: center;
@@ -213,12 +213,12 @@ a:hover{
 
 .hero-txt{
     margin-top: 13%;
-
 }
-
 .hero-txt h1{
     font-size: 50px;
-    color: #081833;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.48);
+    padding: 20px;
 }
 
 .hero-txt span{
@@ -283,6 +283,19 @@ a:hover{
     list-style: none;
     padding: 0;
     line-height: 40px;
+}
+
+/*navbar shrink*/
+nav.navbar.shrink .navbar-brand {
+    font-size: 25px;
+}
+nav.navbar.shrink a {
+    line-height: 20px!important;
+    transition: all .4s ease;
+}
+nav.navbar.shrink .navbar-toggle {
+    margin: 8px 15px 8px 0;
+    padding: 4px 5px;
 }
 
 
