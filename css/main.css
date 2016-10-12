@@ -254,7 +254,7 @@ a:hover{
 /////////////////////////////////////////////////////////////////////////*/
 
 
-#history-section{
+#about{
     background-color: #FEE252;
     padding: 60px 0;
 }
@@ -1135,7 +1135,7 @@ figure.effect-julia:hover p {
         padding: 10px;
     }
 
-    #history-section img{
+    #about img{
         width: 100%;
     }
 
