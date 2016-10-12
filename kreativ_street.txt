@@ -1,0 +1,15 @@
+
+Kreativ Street Project
+
+website url : http://www.kreativstreet.com/
+github url- https://github.com/Scaledesk/akad
+
+All changes done till now- (date- 12 Oct,2016)
+Latest changes given by client
+1)Adding new banner image
+2)Adding modal having enquiry form
+3)About us text to be changed
+4)Linking header menu with each section
+
+Remaining changes left-
+Make the enquiry form working-needs functionality i.e PHP code needed there for mail.

@@ -1153,11 +1153,11 @@ figure.effect-julia:hover p {
         width: 100%;
     }
     #copyright.col-md-5 h5{
-        text-align: center;
+        text-align: center !important;
 
     }
-    .footer-social-icons li{
-        text-align: center;
+    ul .footer-social-icons li{
+        text-align: center !important;
     }
 
 }
