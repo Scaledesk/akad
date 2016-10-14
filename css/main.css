@@ -195,7 +195,7 @@ a:hover{
     font-size: 50px;
     color: #fff;
     /*background: rgba(0, 0, 0, 0.48);*/
-    padding: 20px;
+    padding: 10px 20px;
     font-weight: bolder;
 }
 
@@ -212,7 +212,7 @@ a:hover{
     word-spacing: 4px;
     color: #ffffff;
     /*background: rgba(0, 0, 0, 0.48);*/
-    padding: 12px;
+    padding: 0 12px;
 }
 
 
@@ -1176,6 +1176,17 @@ figure.effect-julia:hover p {
     }
     ul .footer-social-icons li{
         text-align: center !important;
+    }
+
+    .hero-txt h1 {
+        font-size: 37px;
+        color: #fff;
+        padding: 3% 15%;
+        font-weight: bolder;
+    }
+
+    .hero-img {
+        height: 500px;
     }
 
 }
