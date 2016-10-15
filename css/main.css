@@ -912,10 +912,15 @@ figure.effect-julia:hover p {
     transition: all .4s;
 
 }
+.f-15:before{
+    font-size: 15px;
+}
 .f-30:before{
     font-size: 24px;
 }
-
+.p-footer{
+    padding: 10px 10px 0 0;
+}
 
 /*end contact us*/
 
