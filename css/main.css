@@ -904,14 +904,12 @@ figure.effect-julia:hover p {
     font-weight: 800;
     color: #0a1a33;
 }
-.call-btn{
-    border:2px solid transparent;
-}
 .call-btn:hover{
-    border:2px solid #0a1a33;
+    background-color: #0a1a33;
+    color: #fff;
     transition: all .4s;
-
 }
+
 .f-15:before{
     font-size: 15px;
 }
@@ -1232,6 +1230,9 @@ figure.effect-julia:hover p {
 
     .hero-img {
         height: 500px;
+    }
+    .contact-color{
+        padding: 0 10px 10px 35px;
     }
 
 }
