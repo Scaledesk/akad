@@ -55,8 +55,7 @@ a:hover{
     background: rgba(255, 255, 255, 0.67);;
     border: none;
     padding: 10px 0;
-
-
+    transition: all .4s;
 }
 .custom-nav li a{
     color: #081833!important;
@@ -775,9 +774,10 @@ figure.effect-julia:hover p {
 /////////////////////////////////////////////////////////////////////////*/
 
 
+
 #footer-section{
     background-color: #0a1a33;
-    padding: 60px 0;
+    padding: 35px 0;
 }
 
 #footer-section .footer-title{
@@ -878,6 +878,46 @@ figure.effect-julia:hover p {
 .form-modal input{
     border-radius: 0;
 }
+
+/*contact us section*/
+.contact-color p {
+    color: #ffffff !important;
+}
+.contact-color p:hover{
+    color:#fee252 !important;
+}
+.contact-color p a{
+    text-decoration: none;
+    color: #ffffff !important;
+}
+.contact-color p a:hover{
+    text-decoration: none;
+    color:#fee252 !important;
+}
+#call-to-action{
+    background-color: #fee252;
+    padding: 20px 0;
+
+}
+.call-title{
+    font-size: 30px;
+    font-weight: 800;
+    color: #0a1a33;
+}
+.call-btn{
+    border:2px solid transparent;
+}
+.call-btn:hover{
+    border:2px solid #0a1a33;
+    transition: all .4s;
+
+}
+.f-30:before{
+    font-size: 24px;
+}
+
+
+/*end contact us*/
 
 
 /*//////////////////////////////////////////////////////////////////////////
