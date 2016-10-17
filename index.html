@@ -7,44 +7,72 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-
     <link rel="stylesheet" href="css/main.css">
     <script src="js/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/e4667d49ab.js"></script>
+    <script src="js/customHeader.js"></script>
 </head>
 <body>
+
+<!--
+This is where content will go -->
+
+<div id="wrapper">
+    <div id="header">
+
+
+    </div>
+</div>
 
 
 <section id="hero-section">
     <header>
-        <nav class="navbar navbar-default navbar-fixed-top custom-nav">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
+        <nav class="navbar navbar-fixed-top custom-nav">
+            <div class="">
+
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">Menu
-                        <!--<span class="sr-only">Toggle navigation</span>-->
-                        <!--<span class="icon-bar"></span>-->
-                        <!--<span class="icon-bar"></span>-->
-                        <!--<span class="icon-bar"></span>-->
-                    </button>
+                    <div id="toggle_m_nav" href="#">
+                        <div id="m_nav_menu" class="m_nav">
+                            <div class="m_nav_ham active" id="m_ham_1"></div>
+                            <div class="m_nav_ham active" id="m_ham_2"></div>
+                            <div class="m_nav_ham active" id="m_ham_3"></div>
+                        </div>
+                    </div>
                     <a class="navbar-brand custom-brand" href="index.html"><img src="img/KREATIV-STREET.png" width="150" class="h-logo" alt="Logo"></a>
                 </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right ">
-                        <li><a  href="#platform-section" class="active">Home</a></li>
-                        <li><a  href="#about" class="active">About us</a></li>
-                        <li><a  href="#services" class="active">Services</a></li>
-                        <li><a  href="#portfolio" class="active">Portfolio</a></li>
-                        <!--<li><a  href="#" class="active">Blog</a></li>-->
-                        <li><a  href="#footer-section" class="active">Contact us</a></li>
-
+                <!-- This is the general container and content that makes up the navbar itself
+                 -->
+                <div id="m_nav_container" class="m_nav">
+                    <ul id="m_nav_list" class="m_nav">
+                        <li class="m_nav_item" id="m_nav_item_1"> <a  href="#platform-section" class="active"> Home</a> </li>
+                        <li class="m_nav_item" id="moble_nav_item_2"> <a href="#about"> About Us </a> </li>
+                        <li class="m_nav_item" id="moble_nav_item_3"> <a href="#services"> Services </a> </li>
+                        <li class="m_nav_item" id="moble_nav_item_4"> <a href="#portfolio"> Portfolio </a> </li>
+                        <li class="m_nav_item" id="moble_nav_item_5"> <a href="#footer-section"> Contact Us </a> </li>
                     </ul>
                 </div>
-            </div>
-        </nav>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
+                    <!--<ul class="nav navbar-nav navbar-right ">-->
+                        <!--<li><a  href="#platform-section" class="active">Home</a></li>-->
+                        <!--<li><a  href="#about" class="active">About us</a></li>-->
+                        <!--<li><a  href="#services" class="active">Services</a></li>-->
+                        <!--<li><a  href="#portfolio" class="active">Portfolio</a></li>-->
+                        <!--&lt;!&ndash;<li><a  href="#" class="active">Blog</a></li>&ndash;&gt;-->
+                        <!--<li><a  href="#footer-section" class="active">Contact us</a></li>-->
+
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</nav>-->
+                </div>
+            </nav>
+
+
     </header>
+    </section>
 
 
 
@@ -52,7 +80,7 @@
         <div class="hero-txt">
             <h1> Welcome to  <span>Kreativ Street</span></h1>
 
-            <p>|   A Boutique Digital Marketing Agency  |</p>
+            <p>|  A Boutique Digital Marketing Agency |</p>
 
         </div>
 
@@ -328,7 +356,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9 text-center">
-                <h2 class="call-title">YOU THINK WE'RE COOL ? LET'S WORK TOGETHER</h2></div>
+                <h2 class="call-title">YOU THINK WE'RE COOL ?  &nbsp;LET'S WORK TOGETHER</h2></div>
                 <div class="col-md-3 text-center">
                     <button class="akad-btn-white call-btn m-t-10" data-toggle="modal" data-target="#exampleModal">Get in Touch</button>
                 </div>
@@ -495,7 +523,19 @@
         var modal = $(this);
         modal.find('.modal-title').text('Enquiry Form ' + recipient);
         modal.find('.modal-body input').val(recipient)
-    })
+    });
+
+    $(".m_nav_item").click(function(){
+        $("#m_nav_container").css("display", "none");
+        $("#m_ham_1").removeClass("m_nav_ham_1_open");
+        $("#m_ham_2").removeClass("m_nav_ham_2_open");
+        $("#m_ham_3").removeClass("m_nav_ham_3_open");
+    });
+//    $(".m_nav").click(function(){
+//        $("#wrapper").removeClass("close_wrapper");
+//    });
+
+
 </script>
 
 <!--end bootstrap modal custom -->
