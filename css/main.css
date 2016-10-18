@@ -206,6 +206,7 @@ a:hover{
 }
 
 .hero-txt p{
+    margin: 0 !important;
     text-align: center;
     font-weight: 600;
     text-transform: uppercase;
@@ -1165,7 +1166,11 @@ Media query for mid-size non-mobile devices*/
     width: 60%;
 }
 
-
+.pipe{
+    vertical-align: sub;
+    font-size: 35px;
+    color: #ffffff !important;
+}
 
 
 
@@ -1256,6 +1261,9 @@ Media query for mid-size non-mobile devices*/
 .m-30{
     margin: 30px!important;
 }
+.m-tb-10{
+    margin: 10px 0 !important;
+}
 
 /*////Ends here///*/
 
@@ -1318,7 +1326,6 @@ Media query for mid-size non-mobile devices*/
 .f-12{
     font-size: 12px!important;
 }
-
 
 .f-16{
     font-size: 16px!important;
