@@ -1456,3 +1456,28 @@ Media query for mid-size non-mobile devices*/
 
 }
 
+
+@media (min-width: 1980px) {
+    .container {
+        width: 1980px;
+    }
+
+    p {
+        font-size: 26px;
+        line-height: 2em;
+    }
+}
+
+
+@media (min-width: 1400px) {
+
+
+    .hero-img{
+        height: 100%;
+    }
+
+
+}
+
+
+
