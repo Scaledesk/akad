@@ -295,7 +295,9 @@ nav.navbar.shrink .navbar-toggle {
 }
 
 
-
+#services figure figcaption{
+    text-transform: uppercase;
+}
 
 
 /*//////////////////////////////////////////////////////////////////////////
@@ -1478,6 +1480,7 @@ Media query for mid-size non-mobile devices*/
 
 
 }
+
 
 
 
