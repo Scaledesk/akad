@@ -296,7 +296,7 @@ nav.navbar.shrink .navbar-toggle {
 
 
 #services figure figcaption{
-    text-transform: uppercase;
+    text-transform: capitalize;
     color: #081833;
 }
 
