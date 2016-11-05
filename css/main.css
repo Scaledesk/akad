@@ -1,4 +1,13 @@
 
+
+* {
+    box-sizing: border-box;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -ms-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
 html{
     overflow-x: hidden;
 }
@@ -94,6 +103,8 @@ a:hover{
     font-weight: bolder;
     text-align: center;
     transition: all .4s ease-in-out;
+    display: block;
+    margin: 0 auto;
 }
 
 .akad-btn:hover{
@@ -907,7 +918,7 @@ figure.effect-julia:hover p {
 
 }
 .call-title{
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 800;
     color: #0a1a33;
 }
@@ -1004,14 +1015,7 @@ background-size: cover;*/
 }
 /*class applied to create the lines*/
 
-* {
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    -webkit-transition-duration: 0.3s;
-    -moz-transition-duration: 0.3s;
-    -ms-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-}
+
 
 .m_nav_ham {
     width: 35px;
@@ -1176,6 +1180,97 @@ Media query for mid-size non-mobile devices*/
     color: #ffffff !important;
 }
 
+
+/*//////////////////////////////////////////////////////////////////////////
+
+   Single portfolio section
+
+/////////////////////////////////////////////////////////////////////////*/
+
+
+#single-portfolio-container{
+    /*background-color: #f98603;*/
+    /*height: 400px;*/
+    /*max-height: 60vh;*/
+    /*position: relative;*/
+}
+
+
+.portfolio-title{
+    padding-top: 10%;
+    background-color: #f98603;
+    height: 400px;
+    max-height: 60vh;
+    position: relative;
+}
+
+
+.portfolio-title h2{
+    font-size: 6vw;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.portfolio-img{
+    padding-top: 5%;
+}
+
+
+
+
+.portfolio-img .col-xs-12 h2{
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #f98603;
+    margin-bottom: 60px;
+}
+
+
+.portfolio-about{
+}
+
+.portfolio-about .box{
+}
+
+
+.portfolio-about .box1{
+    background-color: #00b1b9;
+}
+
+
+.portfolio-about .box2{
+    background-color: #5875b9;
+}
+
+.question{
+    background-color: #f98603;
+    text-align: center;
+    height: 400px;
+    max-height: 60%;
+    color: #fff;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+        justify-content: center;
+    -webkit-align-items: center;
+        align-items: center;
+}
+
+.answer{
+    text-align: justify;
+    color: #999;
+    height: 400px;
+    max-height: 60%;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 20px;
+
+
+}
 
 
 
@@ -1455,6 +1550,15 @@ Media query for mid-size non-mobile devices*/
     }
     .contact-color{
         padding: 0 10px 10px 35px;
+    }
+
+
+    .portfolio-img img{
+        width: 100%;
+    }
+
+    #m_nav_menu{
+        right: 10px;
     }
 
 }
