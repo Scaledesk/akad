@@ -1272,6 +1272,19 @@ Media query for mid-size non-mobile devices*/
 
 }
 
+.question h2{
+    font-weight: bolder;
+
+}
+
+.question h2 > i {
+    font-size: 5.6em;
+    transform: skew(-8deg);
+    display: inline-block;
+
+}
+
+
 
 
 /*//////////////////////////////////////////////////////////////////////////
@@ -1559,6 +1572,11 @@ Media query for mid-size non-mobile devices*/
 
     #m_nav_menu{
         right: 10px;
+    }
+
+    .portfolio-title {
+        padding-top: 22%;
+
     }
 
 }
